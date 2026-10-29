@@ -40,7 +40,7 @@ mod foo {
         let ctx = contexts.ctx_mut()?;
         let mut viewport_ui = Ui::new(
             ctx.clone(),
-            "viewport".into(),
+            egui::Id::unique("viewport"),
             UiBuilder::new()
                 .layer_id(LayerId::background())
                 .max_rect(ctx.viewport_rect()),
@@ -124,7 +124,7 @@ mod foo {
             });
 
             let painter =
-                ctx.layer_painter(LayerId::new(Order::Foreground, Id::new("file_drop_target")));
+                ctx.layer_painter(LayerId::new(Order::Foreground, Id::unique("file_drop_target")));
 
             let content_rect = ctx.content_rect();
             painter.rect_filled(content_rect, 0.0, Color32::from_black_alpha(192));

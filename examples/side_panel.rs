@@ -31,7 +31,7 @@ fn ui_example_system(
     let ctx = contexts.ctx_mut()?;
     let mut viewport_ui = Ui::new(
         ctx.clone(),
-        "viewport".into(),
+        egui::Id::unique("viewport"),
         UiBuilder::new()
             .layer_id(LayerId::background())
             .max_rect(ctx.viewport_rect()),

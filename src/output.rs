@@ -64,6 +64,9 @@ pub fn process_output_system(
                         egui_clipboard.set_text(_text);
                     }
                 }
+                // Text selection settling is for the X11/Wayland primary selection, which
+                // the clipboard backend here doesn't manage.
+                egui::OutputCommand::TextSelectionSettled(_) => {}
                 egui::OutputCommand::CopyImage(_image) => {
                     #[cfg(all(feature = "manage_clipboard", not(target_os = "android")))]
                     egui_clipboard.set_image(_image);

@@ -629,6 +629,8 @@ pub fn write_mouse_wheel_messages_system(
                 delta,
                 modifiers,
                 phase: TouchPhase::Move,
+                // Bevy doesn't report what is driving the scroll.
+                source: egui::MouseWheelSource::Unknown,
             },
         });
     }

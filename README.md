@@ -1,3 +1,5 @@
+> **sapphire-turtle fork** of [vladbat00/bevy_egui](https://github.com/vladbat00/bevy_egui) v0.43.1 on egui 0.37, kept until upstream releases egui 0.37 support (see upstream PR #508); drop it then.
+
 [![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner2-direct.svg)](https://stand-with-ukraine.pp.ua)
 
 **Hey!** I'm the author of the crate, and I was born in Mariupol, Ukraine. When russians started the war in 2014, I moved to Kyiv. My parents, who had been staying in Mariupol till the start of the full-scale invasion, barely escaped the city alive. By the moment of writing (June 24th, 2026), we had [2225 air raid alerts in Kyiv, and russians managed to bomb the city 873 times](https://air-alarms.in.ua/en/region/kyiv?only-region-center#statistic).
